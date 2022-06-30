@@ -1,0 +1,490 @@
+$boja:rgba(13, 13, 13,0.9);
+$slova:#f2f2f2;
+$f:rgba(230, 230, 230,0.4);
+$krug:rgba(61, 61, 41,0.3);
+$fut:#737373;
+@mixin font{
+    font-family:'Roboto Mono', monospace;
+    color: $boja;
+}
+@mixin fwfs {
+    font-size:20px;
+    font-weight:bold;
+}
+@mixin s {
+    background:radial-gradient($krug,$boja);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+	scroll-behavior: smooth;
+}
+ul{
+    list-style:none;
+    }
+a{
+    text-decoration: none;
+}
+#meni{
+    width: 100%;
+    min-height: 600px;
+    background-image:url(../img/slajder.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+        ul{
+            width: 100%;
+            height: 50px;
+            display:flex;
+            justify-content: space-around;
+            background-color: $boja;
+            padding-top:20px;
+            position: fixed;
+        }
+                a{
+                    color:$slova;
+                    @include fwfs();
+                    font-family: 'Roboto Mono', monospace;
+                    text-transform: uppercase;
+                    &:hover{
+                        color:$f;
+                    }
+                }
+            }
+            h1{
+                @include font();
+                position:absolute;
+                bottom:150px;
+                left:100px;
+                font-size:40px;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+.Naslovi{
+    @include font();
+    @include fwfs();
+    text-align: center;
+    padding: 20px;
+}
+                                                         /* About Me*/
+#AboutMe{
+    h2{
+        width: 145px;
+        margin: 0px auto;
+        padding-bottom: 5px; 
+        border-bottom: 3px solid $boja;
+        margin-top: 10px;
+    }
+}
+#Autor{
+    width: 80%;
+    margin: 0px auto;
+    border:3px solid $boja;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+#tekst{
+    float:left;
+    padding: 30px;
+    width:40%;
+        p{
+            text-align: justify;
+            @include font();
+            @include fwfs();
+            padding-top: 10px;
+            margin-top: 20px;
+        }
+}
+#slika{
+    padding:30px ;
+        img{
+            border-radius: 30px;
+        }
+}
+#sredina{
+    h2{
+            width: 145px;
+            margin: 0px auto;
+            padding-bottom: 5px; 
+            border-bottom: 3px solid $boja;
+            margin-top: 10px;
+        }
+    }
+                                                         /* Skillset */
+#Skills{
+        width:100%;
+        display:flex;
+        justify-content:space-around;
+        flex-wrap:wrap;
+    .Skill{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border:3px solid $boja;
+        background-color:$slova;
+        }
+    }
+#s1{
+    width: 170px;
+    height: 170px;
+    @include s();
+    }
+#s2{
+    width: 160px;
+    height: 160px;
+    @include s();
+    }
+#s3{
+    width: 90px;
+    height: 90px;
+    @include s();
+    }
+#s4{
+    width: 120px;
+    height: 120px;
+    @include s();                                                         
+    }
+h4{
+    font-size: 20px;
+    color:$boja;
+    text-align: center;
+ }
+ 
+                                                         /* Projects */
+#Projects{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap:wrap;
+        padding-top: 30px;
+        }
+        .Project{
+            &:hover{
+                transform: scale(1.08);
+            }
+            h4{
+                @include font();
+                @include fwfs();
+                text-align:center;
+                padding: 10px;
+            }
+                p{
+                    text-align: center;
+                    padding-bottom: 20px;
+                    @include font();
+                }
+            img{
+                border-radius: 30px;
+            }
+        }
+                                                         /* Contact Me */
+#CM{
+    background-image:url(../img/bcgf.jpg);
+    h2{
+        width: 185px;
+        margin: 0px auto;
+        padding-bottom: 5px; 
+        border-bottom: 3px solid $slova;
+        color: $slova;
+    }
+}
+#form {
+    margin:30px;
+    form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap:wrap;
+        height:340px;
+        
+    }
+    input{
+        font-size: 20px;
+        width: 50%;
+        box-sizing: border-box;
+        height: 50px;
+        padding: 0px 15px 0px 15px;
+        background: transparent;
+        outline: none;
+        color:$slova;  
+        border: solid 3px $slova;
+    }
+    input:focus{
+        color:$slova;
+        transition:0.8s;
+        background-color:$f; 
+    }
+    ::placeholder{
+        color:$slova;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 20px;
+    }  
+    .text{
+        border-bottom:none;
+    }
+    #submit {
+        
+        cursor:pointer;
+        transition:0.7s;
+    }
+    #submit:hover{
+        background-color:$f;
+    }
+    textarea{
+        width:50%;
+        box-sizing: border-box;
+        height: 150px;
+        resize:none;
+        padding: 10px 15px 0px 15px;
+        outline: none;
+        background: transparent;
+        color: $boja;  
+        border: solid 3px $slova;
+    }
+    textarea:focus{
+        color:$slova;
+        transition:0.8s;
+        background-color:$f; 
+    }
+}
+                                                         /* Footer */
+#footerG{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+
+    }
+    .info{
+        padding:30px;
+            h3{
+                @include font();
+                @include fwfs();
+                margin-bottom:20px;
+                text-align: center;
+            }
+        }
+            li {
+                display:block;
+                @include font();
+                @include fwfs();
+                text-align: center;
+                a{
+                    color:$fut;
+                        &:hover{
+                            color:$boja;
+                        }
+                }   
+            }
+#footerD{
+    width:100%;
+    height:50px;
+    background-color: $boja;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+        p{
+            color:$slova;
+            font-family:'Roboto Mono', monospace;
+            font-size: 15px;
+            padding-left: 30px;
+            padding-top:15px;
+
+        }
+            a{
+                color: $slova;
+                font-size: 40px;
+                padding-right: 30px;
+            &:hover{
+                color:$f;
+            }
+            }
+}
+                                                         /* MediaQuery */
+
+@media screen and (max-width: 1102px) {
+    /* About Me */
+    #Autor {
+        width: 100%;
+        border: none;
+        background-color: $boja;
+      }
+      #tekst {
+        padding: 10px;
+        width: 83%;
+        p {
+          font-family: 'Roboto Mono', monospace;
+          color: $slova;
+        }
+      }
+      #slika {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        img {
+          width: 70%;
+        }
+    }
+    /* Projects */
+        .Project{ 
+            width: 40%;
+            &:hover{
+                transform: scale(1.08);
+            }
+            img{
+                width: 100%; 
+            }
+        }
+}
+@media screen and (max-width: 900px){
+    /* Skills */
+    #Skills{
+        width:60%;
+        margin: 0px auto;
+        padding-top:30px;
+    .Skill{ 
+        margin-bottom: 50px;
+        }
+    }
+    #form {
+        /*Forma*/
+        input {
+          font-size: 15px;
+          width: 100%;
+        }
+    
+        ::placeholder {
+          font-size: 15px;
+        }
+    
+        textarea {
+          width: 100%;
+          height: 100px;
+        }
+      }
+}
+@media screen and (max-width: 830px) {
+    /* Footer */
+        .info{
+            padding:10px;
+            }
+                li {
+                    font-weight: bold;
+                    font-size: 15px;
+    }
+}
+@media screen and (max-width: 720px){
+    /* Projects */
+    #Projects{
+        width:100%;
+        padding-top: 30px;      
+        }
+        .Project{
+            display: block;
+            margin:0px auto;
+            &:hover{
+                transform: scale(1.20);
+            }
+            img{
+                border-radius: 10px;
+                width: 100%;  
+            }
+            /* Forma */
+  input {
+    font-size: 10px;
+  }
+  ::placeholder {
+    font-size: 10px;
+  }
+        }
+        /* About Me */
+
+        #tekst{
+                p{
+                    font-weight: 300;
+                    font-size: 15px;
+                }
+    }
+        /* Header */
+        #meni{
+            min-height: 400px;
+                ul{
+                    height: 30px;
+                    padding-top:10px;
+                }
+                        a{
+                            font-weight: 300;
+                            font-size: 15px;
+                            &:hover{
+                                color:$f;
+                            }
+                        }
+                    }
+                    h1{
+                        bottom:100px;
+                        font-size:30px;
+                    }
+                }
+@media screen and (max-width: 550px){
+    /* Footer */
+    #footerG{
+        width:100%;
+        display: block;
+        }
+        .info{
+            width: 60%;
+            padding:10px;
+            margin: 0px auto;
+        }
+        li {
+            font-weight: 300;
+            font-size: 15px;
+        }  
+    /* Projects */
+            .Project{
+                width: 80%;
+                margin: 0PX auto;
+                &:hover{
+                    transform:none;
+                }
+                img{
+                    border-radius: 10px;
+                }
+            } 
+    }
+    @media screen and (max-width: 450px){
+    /* Footer */
+        #footerD{
+                p{
+                    font-size: 13px;
+                    padding-left: 10px;
+                }
+                    a{
+                        font-size: 30px;
+                        padding-right: 10px;
+                        padding-top: 8px;
+                    }
+        }
+                /* Header */
+                #meni{
+                    min-height: 300px;
+                            }
+                            h1{
+                                left:50px;
+                                bottom:70px;
+                                font-size:20px;
+                            }
+                        }

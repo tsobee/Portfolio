@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="aleksa&#46;strugarevic&#46;93&#46;19&#64;ict&#46;edu&#46;rs"/>
+	<meta name="keywords" content="portfolio,web,developer,skillset,projects,"/>
+     <meta name='description' content='On this website you can briefly look at my biography and my knowledge in the field of web programming,as well as my previous projects.'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel='shortcut icon' href='img/logo.ico'/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <title>Aleksa Strugarević-Portfolio</title>
+</head>
+<body>
+                                                         <!-- HEADER -->                                                         
+    <header>
+        <div id="meni">
+            <ul>
+                <li><a href="#AboutMe"> About me </a></li>
+                <li><a href="#sredina"> Skillset </a></li>
+                <li><a href="#prj"> Projects </a></li>
+                <li><a href="#CM"> Contact </a></li>
+            </ul>
+            <div id="welcome">
+                <h1>
+                    Hi,  </br>
+                    I'm Aleksa </br>
+                    Web developer, from Serbia
+                </h1>
+        </div>    
+        </div>    
+    </header>
+                                                         <!-- ABOUT ME -->
+    <div  id="AboutMe" class="Naslovi">
+        <h2>About me</h2>
+    </div> 
+    <div id="Autor">
+        <div id="tekst">
+            <p>My name is Aleksa. I am 21 years old. I am from Gornji Milanovac, Serbia. </br>
+               I am studying at a ICT College in Belgrade, the final year of internet technology. 
+                Starting my career as a web developer, I still have a lot to learn, but I think I can finish certain jobs.</br>
+                I am always trying to make a friendly relationship with my clients, because that way we can all work more efficiently and make faster and flawless results.</p>
+        </div>
+        <div id="slika">
+            <img src="img/prof.jpg " alt="Profil"/>
+        </div>
+     </div>    
+                                                         <!--Skillset-->  
+      <div id="sredina">
+        <div class="Naslovi"><h2>Skillset</h2></div>
+                <div id='Skills'>
+                    <div class='Skill'>
+                        <div id='s1'>
+                            <h4>Html5<br/>95 %</h4>
+                        </div>
+                    </div>
+                    <div class='Skill'>
+                        <div id='s2'>
+                            <h4>Css3<br/>95 %</h4>
+                        </div>
+                    </div>
+                    <div class='Skill'>
+                        <div id='s3'>
+                            <h4>JavaScript<br/>85 %</h4>
+                        </div>
+                    </div>
+                    <div class='Skill'>
+                        <div id='s4'>
+                            <h4>Php<br/>65 %</h4>
+                        </div>
+                    </div>
+                    <div class='Skill'>
+                        <div id='s5'>
+                            <h4>ReactJS<br/>In progress...</h4>
+                        </div>
+                    </div>
+                </div>
+                                                         <!--Projects--> 
+        <div id='prj' class="Naslovi">
+            <h2>Projects</h2>  
+        </div>
+        <div id="Projects">
+            <div class="Project">
+                <a href="https://cineton.000webhostapp.com/"><img src="img/cineton.png" alt="cineton"/></a>
+                <h4>Cineton</h4>
+                <p>HTML5/CSS3/JS/PHP <br>(dynamic, responsive, bootstrap, jquery, ajax)</p>
+            </div>
+            <div class="Project">
+                <a href="https://asmobile.netlify.app/index.html"><img src="img/asmobile.png" alt="asmobile"/></a>
+                <h4>AS Mobile</h4>
+                <p>HTML5/CSS3/JS <br>(dynamic, responsive, bootstrap, jquery, json, ajax)</p>
+            </div>
+            <div class="Project">
+                <a href="https://bellamozzarella.netlify.app/index.html"><img src="img/bella.png" alt="bella"/></a>
+                <h4>Bella Mozzarella</h4>
+                <p>HTML5/CSS3/JS <br>(dynamic, responsive, bootstrap, jquery, template)</p>
+            </div>
+            <div class="Project">
+                <a href="https://nevergiveupgym.netlify.app/index.html"><img src="img/gym.png" alt="gym"/></a>
+                <h4>Never give up GYM</h4>
+                <p>HTML5/CSS3/JS <br>(dynamic, responsive, bootstrap, jquery)</p>
+            </div>
+            <div class="Project">
+                <a href="https://homemadepizza.netlify.app/index.html"><img src="img/homemade.png" alt="homemade"/></a>
+                <h4>Homemade pizza</h4>
+                <p>HTML5/CSS3(SASS/LESS) <br>(static,responsive, bootstrap, materialize)</p>
+            </div>
+                 
+            <div class="Project">
+                <a href="https://picerijazvonce.netlify.app/index.html" target='_blank'><img src="img/project.png" alt="Project"/></a>
+                <h4>Picerija Zvonce</h4>
+                <p>HTML5/CSS3 <br>(static)</p>
+            </div>
+            <div class="Project">
+                <a href="#"><img src="img/portf.png" alt="Portfolio"/></a>
+                <h4>Portfolio</h4>
+                <p>HTML5/CSS3 <br>(static, responsive)</p>
+            </div>      
+        </div>
+                                                         <!--Contact me--> 
+        <div id="CM" class="Naslovi">
+            <h2>
+                Contact Me
+            </h2>
+            <form id="form">
+                <input type="subject" class="text" id="subject" name="subject" placeholder="Subject" required="">
+                <textarea id="body" placeholder="Email message"></textarea>
+                <input type="submit" id="submit" name="submit" value="Send"  onclick="sendEmail()">
+            </form>
+        </div>
+      </div>  
+                                                         <!--Footer--> 
+      <div id="footer">
+            <div id="footerG">
+                <div class='info'>
+					<h3></i>Visit me&nbsp;<i class="fa fa-angle-down"></i> </h3>
+					<ul>
+                        <li><a href='https://www.linkedin.com/in/aleksa-strugarevic-11ba79243/'target='_blank'><i class="fa fa-linkedin">&nbsp;LinkedIn</i></a></li>
+                        <li><a href='https://github.com/tsobee'target='_blank'><i class="fa fa-github">&nbsp;GitHub</i></a></li>
+					</ul>
+				</div>
+                <div class='info'>
+					<h3></i>Contact Info&nbsp;<i class="fa fa-angle-down"></i></h3>
+					<ul> 
+                        <li><a href='#CM' ><i class="fa fa-phone-square">&nbsp;Phone: 069 201 20 30</i></a></li> 
+						<li><a href='#CM' ><i class="fa fa-envelope">&nbsp;E-mail: strugarevic&#46;alekssa&#64;gmail&#46;com</i></a></li>
+					</ul>
+                </div>
+                
+            </div>
+            <div id="footerD">
+                <p>Copyright &copy; 2022  Aleksa Strugarević</p>
+                <a href="#"><i class="fa fa-angle-up"></i></a>
+            </div>
+        </div>   
+      
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script>
+            function sendEmail() {
+                let sadrzaj = document.getElementById("body").value;
+                let tema = document.getElementById("subject").value;
+                window.open(`mailto:strugarevic.alekssa@gmail.com?subject=${tema}&body=${sadrzaj}`);
+            }
+        </script>
+
+</body>
+</html>
+
